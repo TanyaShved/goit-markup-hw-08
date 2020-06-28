@@ -1,0 +1,64 @@
+.address-nav {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-size: 12px;
+    line-height: 1.17;
+    text-align: left;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+
+  .item {
+    display: block;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 50px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.item:last-child {
+  margin-bottom: 0;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
+  }
+}
+
+.address-icon {
+  margin-right: 10px;
+
+  fill: currentColor;
+}
+
+.address-nav .link {
+  color: $primary-text-color;
+
+  text-decoration: none;
+
+  transition: color $animation, fill $animation;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    color: $accent-color;
+  }
+}

@@ -1,0 +1,39 @@
+.button-text {
+  margin-right: 10px;
+}
+
+.form {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.footer-form {
+  width: 100%;
+  padding: 18px 12px;
+  color: $link-color;
+  background-color: $secondary-bg-color;
+  border: 1px solid $border-color;
+  box-shadow: 0px 4px 4px $shadow;
+  border-radius: 4px;
+
+  @media screen and (max-width: 1199px) {
+    max-width: 450px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+  }
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 1199px) {
+    margin: auto;
+  }
+}

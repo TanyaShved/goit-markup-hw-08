@@ -1,0 +1,39 @@
+.section-block.second {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.occupation {
+  display: flex;
+
+  .item {
+    position: relative;
+
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.section-second-subtitle {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  color: $primary-white-color;
+  background-color: $gradient;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
